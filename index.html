@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.box {
+    display:block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10vh;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+.day {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="month" id="month"></div>
+        <div class="calendar" id="calendar"></div>
+    </div>
+
+<script defer src="index.js"></script>
+</body>
+</html>
